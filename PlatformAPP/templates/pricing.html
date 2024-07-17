@@ -1,0 +1,450 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+    <body>
+
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/img/logo/logo.svg' %}" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text d-none d-xl-block">
+                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+11002345909">+11002345909</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header-button mt-4">
+                                <a href="{% url 'contact' %}" class="theme-btn text-center">
+                                    <span>Get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header inside the base.html  -->
+
+        <!-- Search Area Start -->
+        <div class="search-wrap">
+            <div class="search-inner">
+                <i class="fas fa-times search-close" id="search-close"></i>
+                <div class="search-cell">
+                    <form method="get">
+                        <div class="search-field-holder">
+                            <input type="search" class="main-search-input" placeholder="Search...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--<< Breadcrumb Section Start >>-->
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('static/images/img/breadcrumb.png');">
+            <div class="line-shape">
+                <img src="{% static 'images/img/breadcrumb-shape/line.png' %}" alt="shape-img">
+            </div>
+            <div class="plane-shape float-bob-y">
+                <img src="{% static 'images/img/breadcrumb-shape/plane.png' %}" alt="shape-img">
+            </div>
+            <div class="doll-shape float-bob-x">
+                <img src="{% static 'images/img/breadcrumb-shape/doll.png' %}" alt="shape-img">
+            </div>
+            <div class="parasuit-shape float-bob-y">
+                <img src="{% static 'images/img/breadcrumb-shape/parasuit.png' %}" alt="shape-img">
+            </div>
+            <div class="frame-shape">
+                <img src="{% static 'images/img/breadcrumb-shape/frame.png' %}" alt="shape-img">
+            </div>
+            <div class="bee-shape float-bob-x">
+                <img src="{% static 'images/img/breadcrumb-shape/bee.png' %}" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="page-heading">
+                    <h1 class="wow fadeInUp" data-wow-delay=".3s">Our Pricing</h1>
+                    <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="{% url 'index' %}">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            Our Pricing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section Start -->
+        <section class="pricing-section section-padding mt-0">
+            <div class="container">
+                <div class="pricing-wrapper">
+                    <div class="section-title text-center mb-0">
+                        <span class="wow fadeInUp">Our pricing</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Select a plan according to <br> your requirements</h2>
+                    </div>
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
+                            <a href="#monthly" data-bs-toggle="tab" class="nav-link active box-shadow" aria-selected="true" role="tab">
+                                Monthly
+                            </a>
+                        </li>
+                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
+                            <a href="#yearly" data-bs-toggle="tab" class="nav-link box-shadow" aria-selected="false" role="tab" tabindex="-1">
+                                Yearly
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div id="monthly" class="tab-pane fade show active" role="tabpanel">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                <div class="pricing-items box-shadow">
+                                    <div class="icon">
+                                        <img src="{% static 'images/img/pricing/icon.svg' %}" alt="icon-img">
+                                     </div>
+                                     <div class="element-shape">
+                                        <img src="{% static 'images/img/pricing/element.png' %}" alt="shape-img">
+                                     </div>
+                                    <div class="pricing-header">
+                                        <h4>Basic Plan</h4>
+                                        <h2>$39 <span>/monthly</span></h2>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum porttitor sem
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum lacinia quisque
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Fusce sagittis est fringilla auctor
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Ligula enim varius lacus et luctus
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Pellentesque non massa sed elit 
+                                        </li>
+                                    </ul>
+                                    <a href="{% url 'contact' %}" class="theme-btn">
+                                        Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="pricing-items active box-shadow">
+                                    <div class="icon">
+                                        <img src="{% static 'images/img/pricing/icon.svg' %}" alt="icon-img">
+                                     </div>
+                                     <div class="element-shape">
+                                        <img src="{% static 'images/img/pricing/element-2.png' %}" alt="shape-img">
+                                     </div>
+                                    <div class="pricing-header">
+                                        <h4>Premium Plan</h4>
+                                        <h2>$49 <span>/monthly</span></h2>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum porttitor sem
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum lacinia quisque
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Fusce sagittis est fringilla auctor
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Ligula enim varius lacus et luctus
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Pellentesque non massa sed elit 
+                                        </li>
+                                    </ul>
+                                    <a href="{% url 'contact' %}" class="theme-btn">
+                                        Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                <div class="pricing-items box-shadow">
+                                    <div class="icon">
+                                        <img src="{% static 'images/img/pricing/icon.svg' %}" alt="icon-img">
+                                     </div>
+                                     <div class="element-shape">
+                                        <img src="{% static 'images/img/pricing/element.png' %}" alt="shape-img">
+                                     </div>
+                                    <div class="pricing-header">
+                                        <h4>Advanced</h4>
+                                        <h2>$99 <span>/monthly</span></h2>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum porttitor sem
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum lacinia quisque
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Fusce sagittis est fringilla auctor
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Ligula enim varius lacus et luctus
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Pellentesque non massa sed elit 
+                                        </li>
+                                    </ul>
+                                    <a href="{% url 'contact' %}" class="theme-btn">
+                                        Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="yearly" class="tab-pane fade" role="tabpanel">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="pricing-items box-shadow">
+                                    <div class="icon">
+                                        <img src="{% static 'images/img/pricing/icon.svg' %}" alt="icon-img">
+                                     </div>
+                                     <div class="element-shape">
+                                        <img src="{% static 'images/img/pricing/element.png' %}" alt="shape-img">
+                                     </div>
+                                    <div class="pricing-header">
+                                        <h4>Basic Plan</h4>
+                                        <h2>$39 <span>/monthly</span></h2>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum porttitor sem
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum lacinia quisque
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Fusce sagittis est fringilla auctor
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Ligula enim varius lacus et luctus
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Pellentesque non massa sed elit 
+                                        </li>
+                                    </ul>
+                                    <a href="{% url 'contact' %}" class="theme-btn">
+                                        Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="pricing-items active box-shadow">
+                                    <div class="icon">
+                                        <img src="{% static 'images/img/pricing/icon.svg' %}" alt="icon-img">
+                                     </div>
+                                     <div class="element-shape">
+                                        <img src="{% static 'images/img/pricing/element-2.png' %}" alt="shape-img">
+                                     </div>
+                                    <div class="pricing-header">
+                                        <h4>Premium Plan</h4>
+                                        <h2>$49 <span>/monthly</span></h2>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum porttitor sem
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum lacinia quisque
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Fusce sagittis est fringilla auctor
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Ligula enim varius lacus et luctus
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Pellentesque non massa sed elit 
+                                        </li>
+                                    </ul>
+                                    <a href="{% url 'contact' %}" class="theme-btn">
+                                        Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="pricing-items box-shadow">
+                                    <div class="icon">
+                                        <img src="{% static 'images/img/pricing/icon.svg' %}" alt="icon-img">
+                                     </div>
+                                     <div class="element-shape">
+                                        <img src="{% static 'images/img/pricing/element.png' %}" alt="shape-img">
+                                     </div>
+                                    <div class="pricing-header">
+                                        <h4>Advanced</h4>
+                                        <h2>$99 <span>/monthly</span></h2>
+                                    </div>
+                                    <ul class="pricing-list">
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum porttitor sem
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Condimentum lacinia quisque
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Fusce sagittis est fringilla auctor
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Ligula enim varius lacus et luctus
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Pellentesque non massa sed elit 
+                                        </li>
+                                    </ul>
+                                    <a href="{% url 'contact' %}" class="theme-btn">
+                                        Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--<< Footer Section Start also inside the base.html  >>-->
+
+    </body>
+{% endblock %}

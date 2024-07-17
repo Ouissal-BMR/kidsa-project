@@ -1,0 +1,466 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <body>
+
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/img/logo/logo.svg' %}" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text d-none d-xl-block">
+                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+11002345909">+11002345909</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header-button mt-4">
+                                <a href="{% url 'contact' %}" class="theme-btn text-center">
+                                    <span>Get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header inside the base.html  -->
+
+        <!-- Search Area Start -->
+        <div class="search-wrap">
+            <div class="search-inner">
+                <i class="fas fa-times search-close" id="search-close"></i>
+                <div class="search-cell">
+                    <form method="get">
+                        <div class="search-field-holder">
+                            <input type="search" class="main-search-input" placeholder="Search...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--<< Breadcrumb Section Start >>-->
+        <div class="breadcrumb-wrapper bg-cover" style="background-image: url('static/images/img/breadcrumb.png');">
+            <div class="line-shape">
+                <img src="{% static 'images/img/breadcrumb-shape/line.png' %}" alt="shape-img">
+            </div>
+            <div class="plane-shape float-bob-y">
+                <img src="{% static 'images/img/breadcrumb-shape/plane.png' %}" alt="shape-img">
+            </div>
+            <div class="doll-shape float-bob-x">
+                <img src="{% static 'images/img/breadcrumb-shape/doll.png' %}" alt="shape-img">
+            </div>
+            <div class="parasuit-shape float-bob-y">
+                <img src="{% static 'images/img/breadcrumb-shape/parasuit.png' %}" alt="shape-img">
+            </div>
+            <div class="frame-shape">
+                <img src="{% static 'images/img/breadcrumb-shape/frame.png' %}" alt="shape-img">
+            </div>
+            <div class="bee-shape float-bob-x">
+                <img src="{% static 'images/img/breadcrumb-shape/bee.png' %}" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="page-heading">
+                    <h1 class="wow fadeInUp" data-wow-delay=".3s">Blog Details</h1>
+                    <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="{% url 'index' %}">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            Blog Details
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Details Section Start -->
+        <section class="news-details fix section-padding">
+            <div class="container">
+                <div class="news-details-area">
+                    <div class="row g-5">
+                        <div class="col-12 col-lg-8">
+                            <div class="blog-post-details">
+                                <div class="single-blog-post">
+                                    <div class="post-featured-thumb bg-cover" style="background-image: url('static/images/img/news/post-4.jpg');"></div>
+                                    <div class="post-content">
+                                        <ul class="post-list d-flex align-items-center">
+                                            <li>
+                                                <i class="fa-regular fa-user"></i>
+                                                By Admin
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-calendar-days"></i>
+                                                18 Dec, 2024
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-tag"></i>
+                                                Education
+                                            </li>
+                                        </ul>
+                                        <h3>From without content
+                                            style without </h3>
+                                        <p class="mb-3">
+                                            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.
+                                        </p>
+                                        <p class="mb-3">
+                                            The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.
+                                        </p>
+                                        <p>
+                                            Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
+                                        </p>
+                                        <div class="hilight-text mt-4 mb-4">
+                                            <p>
+                                                Pellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies <br> urnacondimentum, sapien neque lobortis tortor, quis efficitur mi ipsum eu metus. Praesent eleifend <br> orci sit amet est vehicula.
+                                            </p>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.71428 20.0711H0.5V5.64258H14.9286V20.4531L9.97665 30.3568H3.38041L8.16149 20.7947L8.5233 20.0711H7.71428Z" stroke="#F39F5F"/>
+                                                <path d="M28.2846 20.0711H21.0703V5.64258H35.4989V20.4531L30.547 30.3568H23.9507L28.7318 20.7947L29.0936 20.0711H28.2846Z" stroke="#F39F5F"/>
+                                            </svg>
+                                        </div>
+                                        <p class="mt-4 mb-5">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros.
+                                        </p>
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="details-image">
+                                                    <img src="{% static 'images/img/news/post-5.jpg' %}" alt="img">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="details-image">
+                                                    <img src="{% static 'images/img/news/post-6.jpg' %}" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="pt-5">
+                                            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row tag-share-wrap mt-4 mb-5">
+                                    <div class="col-lg-8 col-12">
+                                        <div class="tagcloud">
+                                            <a href="{% url 'news-details' %}">Class</a>
+                                            <a href="{% url 'news-details' %}">Sports</a>
+                                            <a href="{% url 'news-details' %}">Canteen</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
+                                        <div class="social-share">
+                                            <span class="me-3">Share:</span>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-area">
+                                    <div class="comments-heading">
+                                        <h3>02 Comments</h3>
+                                    </div>
+                                    <div class="blog-single-comment d-flex gap-4 pt-4 pb-5">
+                                        <div class="image">
+                                            <img src="{% static 'images/img/news/comment.png' %}" alt="image">
+                                        </div>
+                                        <div class="content">
+                                            <div class="head d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                                <div class="con">
+                                                    <h5><a href="{% url 'news-details' %}">Albert Flores</a></h5>
+                                                    <span>March 20, 2024 at 2:37 pm</span>
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p class="mt-30 mb-4">Neque porro est qui dolorem ipsum quia quaed inventor
+                                                veritatis et quasi
+                                                architecto var sed efficitur turpis gilla sed
+                                                sit amet finibus eros. Lorem Ipsum is simply dummy</p>
+                                            <a href="{% url 'news-details' %}" class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-single-comment d-flex gap-4 pt-5 pb-5">
+                                        <div class="image">
+                                            <img src="{% static 'images/img/news/comment-2.png' %}" alt="image">
+                                        </div>
+                                        <div class="content">
+                                            <div class="head d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                                <div class="con">
+                                                    <h5><a href="{% url 'news-details' %}">Alex Flores</a></h5>
+                                                    <span>March 20, 2024 at 2:37 pm</span>
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <p class="mt-30 mb-4">Neque porro est qui dolorem ipsum quia quaed inventor
+                                                veritatis et quasi
+                                                architecto var sed efficitur turpis gilla sed
+                                                sit amet finibus eros. Lorem Ipsum is simply dummy</p>
+                                            <a href="{% url 'news-details' %}" class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-form-wrap pt-5">
+                                    <h3>Leave a comments</h3>
+                                    <form action="#" id="contact-form" method="POST">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="form-clt">
+                                                    <span>Your Name*</span>
+                                                    <input type="text" name="name" id="name" placeholder="Your Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-clt">
+                                                    <span>Your Email*</span>
+                                                    <input type="text" name="email" id="email2" placeholder="Your Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-clt">
+                                                    <span>Message*</span>
+                                                    <textarea name="message" id="message" placeholder="Write Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <button type="submit" class="theme-btn ">
+                                                    post comment<i class="fa-solid fa-arrow-right-long"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="main-sidebar">
+                                <div class="single-sidebar-widget">
+                                    <div class="wid-title">
+                                        <h3>Search</h3>
+                                    </div>
+                                    <div class="search-widget">
+                                        <form action="#">
+                                            <input type="text" placeholder="Search here">
+                                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <div class="wid-title">
+                                        <h3>Categories</h3>
+                                    </div>
+                                    <div class="news-widget-categories">
+                                        <ul>
+                                            <li><a href="{% url 'news-details' %}">Teachers</a> <span>(5)</span></li>
+                                            <li><a href="{% url 'news-details' %}">Indoor Games</a> <span>(3)</span></li>
+                                            <li class="active"><a href="{% url 'news-details' %}">Education</a><span>(6)</span></li>
+                                            <li><a href="{% url 'news-details' %}">Canteen</a> <span>(2)</span></li>
+                                            <li><a href="{% url 'news-details' %}">Classes</a> <span>(4)</span></li>
+                                            <li><a href="{% url 'news-details' %}">Examination</a> <span>(7)</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <div class="wid-title">
+                                        <h3>Recent Post</h3>
+                                    </div>
+                                    <div class="recent-post-area">
+                                        <div class="recent-items">
+                                            <div class="recent-thumb">
+                                                <img src="{% static 'images/img/news/pp3.jpg' %}" alt="img">
+                                            </div>
+                                            <div class="recent-content">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        18 Dec, 2024
+                                                    </li>
+                                                </ul>
+                                                <h6>
+                                                    <a href="news-details.html">
+                                                        That Jerk Form Finance <br>
+                                                        Really Me
+                                                    </a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="recent-items">
+                                            <div class="recent-thumb">
+                                                <img src="{% static 'images/img/news/pp4.jpg' %}" alt="img">
+                                            </div>
+                                            <div class="recent-content">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        18 Dec, 2024
+                                                    </li>
+                                                </ul>
+                                                <h6>
+                                                    <a href="{% url 'news-details' %}">
+                                                        How to keep Chidden Safe <br>
+                                                        Online In Simple
+                                                    </a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="recent-items">
+                                            <div class="recent-thumb">
+                                                <img src="{% static 'images/img/news/pp5.jpg' %}" alt="img">
+                                            </div>
+                                            <div class="recent-content">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        18 Dec, 2024
+                                                    </li>
+                                                </ul>
+                                                <h6>
+                                                    <a href="{% url 'news-details'%}">
+                                                        Form Without Content <br>
+                                                        Style Without
+                                                    </a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <div class="wid-title">
+                                        <h3>Tags</h3>
+                                    </div>
+                                    <div class="news-widget-categories">
+                                        <div class="tagcloud">
+                                            <a href="{% url 'news-details' %}">Time-Table</a>
+                                            <a href="{% url 'news-details' %}">Children</a>
+                                            <a href="{% url 'news-details' %}">Examination</a>
+                                            <a href="{% url 'news-details' %}">Class</a>
+                                            <a href="{% url 'news-details' %}">Sports</a>
+                                            <a href="{% url 'news-details' %}">Canteen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--<< Footer Section Start also inside the base.html  >>-->
+
+    </body>
+{% endblock %}
